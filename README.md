@@ -31,12 +31,19 @@ git branch -d optimize
 ```
 
 ## 工作篇
+场景：自己需要在optimize项目中新增或者修改代码
+
+1. 首先切换到optimize分支
+```
+git checkout optimize
+```
+2. 拉取最新的optimize分支代码
+```
+git pull origin optimize
+```
+每天工作前，必须要先把小伙伴的更新拉取下来，保证自己是在最新的版本上更改的。这两部做完之后就可以在项目中修改或者新增文件了。
+
 场景：我们在optimize修改了代码，养成一个良好的习惯，每天提交自己修改的代码
-0. 首先要确保自己在optimize分支上
-```
-git branch
-```
-这个命令查看自己所在的当前分支，如果不是，使用`git checkout optimize`切换到optimize分支
 
 1. 查看修改了哪些文件
 ```
